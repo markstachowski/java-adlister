@@ -10,9 +10,12 @@
 <head>
     <title>Login Form</title>
 </head>
+<%! String username = request.getParam("username"); %>
 <body>
 <h1>Codeup Register Form</h1>
-<form action="login" method="post">
+
+<h1><% username %></h1>
+<form action="login.jsp" method="post">
     <table style="with: 50%">
         <tr>
             <td>UserName</td>
